@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "DMSans";
+    font-style: normal;
+    font-weight: 700;
+    src: local('DMSans bold'), local('DMSans-bold');
+    src: url(/webroot/fonts/DMSans-Bold.woff2) format(woff2), url(/webroot/fonts/DMSans-Bold.woff) format(woff);
+}
+
+@font-face {
+    font-family: "DMSans";
+    font-style: normal;
+    font-weight: 700;
+    src: local('DMSans bold italic'), local('DMSans-BoldItalic');
+    src: url(/webroot/fonts/DMSans-BoldItalic.woff2) format(woff2), url(/webroot/fonts/DMSans-BoldItalic.woff) format(woff);
+}
+
+@font-face {
+    font-family: "DMSans";
+    font-style: normal;
+    src: local('DMSans italic'), local('DMSans-italic');
+    src: url(/webroot/fonts/DMSans-Italic.woff2) format(woff2), url(/webroot/fonts/DMSans-Medium.woff) format(woff);
+}
+
+@font-face {
+    font-family: "DMSans";
+    font-style: normal;
+    font-weight: 400;
+    src: local('DMSans regular'), local('DMSans-regular');
+    src: url(/webroot/fonts/DMSans-Regular.woff2) format(woff2), url(/webroot/fonts/DMSans-Regular.woff) format(woff);
+}
+
+@font-face {
+    font-family: "DMSans";
+    font-style: normal;
+    font-size: medium;
+    src: local('DMSans medium'), local('DMSans-medium');
+    src: url(/webroot/fonts/DMSans-Medium.woff2) format(woff2), url(/webroot/fonts/DMSans-Medium.woff) format(woff);
+}
+
+@font-face {
+    font-family: "DMSans";
+    font-style: normal;
+    font-weight: 400;
+    src: local('DMSans mediumItalic'), local('DMSans-MediumItalic');
+    src: url(/webroot/fonts/DMSans-MediumItalic.woff2) format(woff2), url(/webroot/fonts/DMSans-MediumItalic.woff) format(woff);
+}
+
+@font-face {
+    font-family: "DMSerifDisplay";
+    font-style: normal;
+    font-size: medium;
+    src: local('DMSerifDisplay regular'), local('DMSerifDisplay-regular');
+    src: url(/webroot/fonts/DMSerifDisplay-Regular.woff2) format(woff2), url(/webroot/fonts/DMSerifDisplay-Regular.woff) format(woff);
+}
+
+@font-face {
+    font-family: "DMSerifDisplay";
+    font-style: normal;
+    font-weight: 400;
+    src: local('DMSerifDisplay italic'), local('DMSerifDisplay-Italic');
+    src: url(/webroot/fonts/DMSerifDisplay-Italic.woff2) format(woff2), url(/webroot/fonts/DMSerifDisplay-Italic.woff) format(woff);
+}
+
+h1 {
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-size: 24px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
