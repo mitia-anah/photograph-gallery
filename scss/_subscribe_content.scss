@@ -1,0 +1,52 @@
+.subscribe_content {
+    background: #FFDD78;
+    padding-block-start: 63px;
+}
+
+.subscribe_content .latest {
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 14px;
+}
+
+.subscribe_inner h3 {
+    padding: 14px
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form input {
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-block-start: 12px;
+    margin-inline-start: 5px;
+    margin-inline-end: 24px;
+}
+
+input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 24px;
+}
+
+button.subscribe {
+    background: #434CCC;
+    border-radius: 5px;
+    border-style: none;
+    margin-block-start: 22px;
+    margin-inline-start: 14px;
+    margin-inline-end: 191px;
+    margin-block-end: 54px;
+    padding: 13px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}

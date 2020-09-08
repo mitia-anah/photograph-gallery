@@ -70,12 +70,12 @@ h1 {
     color: #FFFFFF;
 }
 
-.contents a {
+.contents a,
+.latest {
     font-family: "DM Sans";
     font-style: normal;
     font-size: 16px;
     line-height: 24px;
-    color: rgba(0, 0, 0, 0.5);
 }
 
 h2 {
@@ -84,5 +84,22 @@ h2 {
     font-weight: normal;
     font-size: 52px;
     line-height: 64px;
+    color: #000000;
+}
+
+h3 {
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000000;
+}
+
+.form label {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    padding-inline-start: 5px;
+    text-transform: uppercase;
     color: #000000;
 }
