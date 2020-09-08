@@ -319,6 +319,15 @@ h5 {
   opacity: 1;
   z-index: 3; }
 
+@media (min-width: 800px) {
+  .masthead {
+    background: #434CCC;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem; } }
+
 .contents {
   background: rgba(67, 76, 204, 0.05);
   padding: 1rem; }
