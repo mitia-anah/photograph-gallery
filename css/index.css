@@ -63,7 +63,8 @@ h1 {
   color: #FFFFFF; }
 
 .contents a,
-.latest {
+.latest,
+.inner-text > p {
   font-family: "DM Sans";
   font-style: normal;
   font-size: 16px;
@@ -90,6 +91,14 @@ h3 {
   line-height: 16px;
   padding-inline-start: 5px;
   text-transform: uppercase;
+  color: #000000; }
+
+h4 {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 32px;
   color: #000000; }
 
 html {
@@ -169,7 +178,8 @@ h1 {
   color: #FFFFFF; }
 
 .contents a,
-.latest {
+.latest,
+.inner-text > p {
   font-family: "DM Sans";
   font-style: normal;
   font-size: 16px;
@@ -196,6 +206,14 @@ h3 {
   line-height: 16px;
   padding-inline-start: 5px;
   text-transform: uppercase;
+  color: #000000; }
+
+h4 {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 32px;
   color: #000000; }
 
 .masthead {
@@ -430,3 +448,47 @@ button.subscribe {
   line-height: 24px;
   text-align: center;
   color: #FFFFFF; }
+
+footer {
+  margin: 1rem;
+  padding-block-start: 75px; }
+
+.inner-text {
+  margin: 1rem; }
+
+.inner-text > p {
+  color: rgba(0, 0, 0, 0.5); }
+
+.home {
+  padding: 0;
+  margin: 1rem; }
+
+.home li:nth-of-type(1) {
+  padding-block-end: 1.5rem; }
+
+.home li {
+  margin: 1rem;
+  margin-inline-start: 0; }
+
+.home li:nth-of-type(1) a {
+  color: #000000;
+  font-weight: 700; }
+
+.inner-post {
+  padding-block-start: 79px; }
+
+.post-list {
+  padding: 0;
+  margin: 1rem; }
+
+.post-list li {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  row-gap: 2rem;
+  gap: 2rem; }
+
+.post-list > li img {
+  display: block;
+  width: 100%;
+  height: 100%; }
