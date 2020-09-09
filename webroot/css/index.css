@@ -494,14 +494,7 @@ figure > ul > li:nth-child(9) {
     margin-block-start: 0; }
   .last-inner {
     grid-column: 3 / 5;
-    grid-row: 2; }
-  .subscribe_inner {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); }
-  .subscribe_content {
-    padding: 135px; }
-  form {
-    display: flex; } }
+    grid-row: 2; } }
 
 .subscribe_content {
   background: #FFDD78;
@@ -517,8 +510,7 @@ figure > ul > li:nth-child(9) {
   padding: 14px; }
 
 .form {
-  display: flex;
-  flex-direction: column; }
+  display: grid; }
 
 .form input {
   background: #FFFFFF;
@@ -548,6 +540,28 @@ button.subscribe {
   line-height: 24px;
   text-align: center;
   color: #FFFFFF; }
+
+@media (min-width: 1000px) {
+  .subscribe_inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem; }
+  .subscribe_content {
+    padding: 135px; }
+  .form {
+    display: grid; }
+  label {
+    grid-column: 1 / 8; }
+  input {
+    grid-column: 1 / 6;
+    height: 50px; }
+  button {
+    grid-column: 8 / 6;
+    height: 50px; }
+  .form input {
+    margin-block-start: 0; }
+  button.subscribe {
+    margin: 0; } }
 
 footer {
   padding-block-start: 75px;

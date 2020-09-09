@@ -15,8 +15,7 @@
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
+    display: grid;
 }
 
 .form input {
@@ -49,4 +48,36 @@ button.subscribe {
     line-height: 24px;
     text-align: center;
     color: #FFFFFF;
+}
+
+@media (min-width: 1000px) {
+    .subscribe_inner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .subscribe_content {
+        padding: 135px;
+    }
+    .form {
+        display: grid;
+        // grid-template-columns: 8;
+    }
+    label {
+        grid-column: 1 / 8;
+    }
+    input {
+        grid-column: 1 / 6;
+        height: 50px;
+    }
+    button {
+        grid-column: 8 / 6;
+        height: 50px;
+    }
+    .form input {
+        margin-block-start: 0;
+    }
+    button.subscribe {
+        margin: 0;
+    }
 }
