@@ -117,3 +117,14 @@ h4 {
 h5 {
     font-size: 16px;
 }
+
+@media (min-width: 1000px) {
+    h2 {
+        font-size: 72px;
+        line-height: 80px;
+    }
+    h3 {
+        font-size: 52px;
+        line-height: 64px;
+    }
+}
