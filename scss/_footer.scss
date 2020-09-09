@@ -70,3 +70,23 @@ time {
 .editor a {
     color: rgba(0, 0, 0, 0.5);
 }
+
+@media (min-width: 1000px) {
+    footer {
+        padding-block-start: 0;
+    }
+    .footer_inner {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-inline-start: 135px;
+        margin-inline-end: 135px;
+    }
+    .inner-text {
+        max-width: 25%;
+    }
+    .post-list {
+        // padding-inline-end: 0;
+        padding-inline-start: 130px;
+    }
+}
