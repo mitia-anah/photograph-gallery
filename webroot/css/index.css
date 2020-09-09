@@ -628,7 +628,16 @@ time {
     align-items: center;
     margin-inline-start: 135px;
     margin-inline-end: 135px; }
-  .inner-text {
-    max-width: 25%; }
   .post-list {
-    padding-inline-start: 130px; } }
+    padding-inline-start: 130px; }
+  .first-post p,
+  .second-post p {
+    margin: 0;
+    padding-inline-start: 1rem; }
+  .editor-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline-start: 135px;
+    padding-inline-end: 135px; } }
