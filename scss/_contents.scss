@@ -197,4 +197,8 @@ figure>ul>li:nth-child(9) {
         grid-column: 3 / 5;
         grid-row: 2;
     }
+    .last-inner h3 {
+        margin-block-start: 0;
+        padding-block-start: 1rem;
+    }
 }
