@@ -435,6 +435,8 @@ figure > ul > li:nth-child(9) {
   padding-inline-end: 10px; }
 
 @media (min-width: 800px) {
+  .contents a {
+    padding-inline-start: 135px; }
   .inner {
     margin-inline-start: 135px;
     margin-inline-end: 135px; }
