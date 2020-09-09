@@ -494,7 +494,10 @@ figure > ul > li:nth-child(9) {
     margin-block-start: 0; }
   .last-inner {
     grid-column: 3 / 5;
-    grid-row: 2; } }
+    grid-row: 2; }
+  .last-inner h3 {
+    margin-block-start: 0;
+    padding-block-start: 1rem; } }
 
 .subscribe_content {
   background: #FFDD78;
