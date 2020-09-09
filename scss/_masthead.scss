@@ -36,7 +36,7 @@
 }
 
 .drawer-menu li a:hover {
-    background: #fff;
+    color: red;
 }
 
 
@@ -126,6 +126,21 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 1rem;
+        padding-inline-start: 135px;
+        padding-inline-end: 135px;
+    }
+    .menu-btn,
+    .close-menu {
+        display: none;
+    }
+    .drawer-menu {
+        display: contents;
+    }
+    .drawer-menu ul {
+        display: flex;
+        align-items: center;
+    }
+    .drawer-menu ul>li {
+        margin: 1rem;
     }
 }

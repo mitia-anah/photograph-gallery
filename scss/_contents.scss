@@ -1,7 +1,8 @@
 // This is the parents of the contents
 .contents {
     background: rgba(67, 76, 204, 0.05);
-    padding: 1rem;
+    padding-block-start: 2rem;
+    padding: 14px;
 }
 
 .contents a {
@@ -44,7 +45,7 @@ figure>ul {
 }
 
 figure>ul>li:nth-child(1) {
-    grid-column: 6 / 1;
+    grid-column: 1 / 6;
 }
 
 figure>ul>li:nth-child(2) {
@@ -119,6 +120,7 @@ figure>ul>li:nth-child(9) {
 
 @media (min-width: 800px) {
     .contents a {
+        margin-block-start: 49px;
         padding-inline-start: 135px;
     }
     .inner {
@@ -203,5 +205,13 @@ figure>ul>li:nth-child(9) {
     .last-inner h3 {
         margin-block-start: 0;
         padding-block-start: 1rem;
+    }
+    .media-link li a {
+        padding-inline-start: 0;
+        transition-property: all;
+        transition-duration: 2s;
+    }
+    .media-link li a:hover {
+        background-color: blue;
     }
 }
