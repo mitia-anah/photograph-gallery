@@ -1,3 +1,4 @@
+@import "scss/variable/variables";
 // This is the parents of the contents
 .contents {
     background: rgba(67, 76, 204, 0.05);
@@ -76,8 +77,7 @@ figure>ul>li:nth-child(9) {
 }
 
 .contents-details ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    @include grid();
     column-gap: 2rem;
     padding: 0;
 }
@@ -106,8 +106,7 @@ figure>ul>li:nth-child(9) {
 }
 
 .media-link {
-    display: flex;
-    flex-direction: row;
+    @include flex-element();
     justify-content: flex-start;
     padding: 2rem;
     padding-inline-start: 0;
@@ -124,8 +123,7 @@ figure>ul>li:nth-child(9) {
         padding-inline-start: 135px;
     }
     .inner {
-        margin-inline-start: 135px;
-        margin-inline-end: 135px;
+        @include wrapping-margin();
     }
     .first-inner h2,
     .first-inner p {
