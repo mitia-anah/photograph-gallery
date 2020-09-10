@@ -1,0 +1,11 @@
+@import "scss/fonts";
+@each $font in fonts {
+    @font-face {
+        font-family: map-get($font, 'family');
+        font-weight: map-get($font, 'weight');
+        font-style: map-get($font, 'style');
+        src: local(map-get($font, filename)),
+        url("/webroot/fonts/#{map-get(filename)}.woff2") format('woff2'),
+        url("/webroot/fonts/#{map-get(filename)}.woff") format('woff');
+    }
+}
