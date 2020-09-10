@@ -43,10 +43,8 @@ footer {
 
 .first-post,
 .second-post {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    @include grid();
     margin: 1rem;
-    gap: 1rem;
 }
 
 .post-list p,
@@ -75,12 +73,11 @@ time {
     footer {
         padding-block-start: 0;
     }
+    .editor-list,
     .footer_inner {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin-inline-start: 135px;
-        margin-inline-end: 135px;
+        @include flex-element();
+        @include wrapping-margin();
+        justify-content: space-between;
     }
     .post-list {
         padding-inline-start: 130px;
@@ -89,13 +86,5 @@ time {
     .second-post p {
         margin: 0;
         padding-inline-start: 1rem;
-    }
-    .editor-list {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        padding-inline-start: 135px;
-        padding-inline-end: 135px;
     }
 }
