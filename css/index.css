@@ -1,62 +1,22 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "DMSans";
-  font-style: normal;
-  font-weight: 700;
-  src: local("DMSans bold"), local("DMSans-bold");
-  src: url(/webroot/fonts/DMSans-Bold.woff2) format(woff2), url(/webroot/fonts/DMSans-Bold.woff) format(woff); }
+:root {
+  --margin: 135px;
+  --padding: var(--margin);
+  --primary-color: #000000; }
 
-@font-face {
-  font-family: "DMSans";
-  font-style: normal;
-  font-weight: 700;
-  src: local("DMSans bold italic"), local("DMSans-BoldItalic");
-  src: url(/webroot/fonts/DMSans-BoldItalic.woff2) format(woff2), url(/webroot/fonts/DMSans-BoldItalic.woff) format(woff); }
+h1,
+h2,
+h3,
+h4 {
+  font-family: "DM Serif Display"; }
 
-@font-face {
-  font-family: "DMSans";
-  font-style: normal;
-  src: local("DMSans italic"), local("DMSans-italic");
-  src: url(/webroot/fonts/DMSans-Italic.woff2) format(woff2), url(/webroot/fonts/DMSans-Medium.woff) format(woff); }
-
-@font-face {
-  font-family: "DMSans";
-  font-style: normal;
-  font-weight: 400;
-  src: local("DMSans regular"), local("DMSans-regular");
-  src: url(/webroot/fonts/DMSans-Regular.woff2) format(woff2), url(/webroot/fonts/DMSans-Regular.woff) format(woff); }
-
-@font-face {
-  font-family: "DMSans";
-  font-style: normal;
-  font-size: medium;
-  src: local("DMSans medium"), local("DMSans-medium");
-  src: url(/webroot/fonts/DMSans-Medium.woff2) format(woff2), url(/webroot/fonts/DMSans-Medium.woff) format(woff); }
-
-@font-face {
-  font-family: "DMSans";
-  font-style: normal;
-  font-weight: 400;
-  src: local("DMSans mediumItalic"), local("DMSans-MediumItalic");
-  src: url(/webroot/fonts/DMSans-MediumItalic.woff2) format(woff2), url(/webroot/fonts/DMSans-MediumItalic.woff) format(woff); }
-
-@font-face {
-  font-family: "DMSerifDisplay";
-  font-style: normal;
-  font-size: medium;
-  src: local("DMSerifDisplay regular"), local("DMSerifDisplay-regular");
-  src: url(/webroot/fonts/DMSerifDisplay-Regular.woff2) format(woff2), url(/webroot/fonts/DMSerifDisplay-Regular.woff) format(woff); }
-
-@font-face {
-  font-family: "DMSerifDisplay";
-  font-style: normal;
-  font-weight: 400;
-  src: local("DMSerifDisplay italic"), local("DMSerifDisplay-Italic");
-  src: url(/webroot/fonts/DMSerifDisplay-Italic.woff2) format(woff2), url(/webroot/fonts/DMSerifDisplay-Italic.woff) format(woff); }
+h2,
+h3,
+.form label,
+h4 {
+  color: var(--primary-color); }
 
 h1 {
-  font-family: "DM Serif Display";
-  font-style: normal;
   font-size: 24px;
   line-height: 32px;
   text-transform: uppercase;
@@ -65,41 +25,27 @@ h1 {
 .contents a,
 .latest,
 .inner-text > p {
-  font-family: "DM Sans";
-  font-style: normal;
-  font-size: 16px;
   line-height: 24px; }
 
 h2 {
-  font-family: "DM Serif Display";
-  font-style: normal;
-  font-weight: normal;
   font-size: 52px;
-  line-height: 64px;
-  color: #000000; }
+  line-height: 64px; }
 
 h3 {
-  font-family: "DM Serif Display";
-  font-style: normal;
   font-size: 40px;
-  line-height: 48px;
-  color: #000000; }
+  line-height: 48px; }
 
 .form label {
   font-weight: bold;
   font-size: 12px;
   line-height: 16px;
   padding-inline-start: 5px;
-  text-transform: uppercase;
-  color: #000000; }
+  text-transform: uppercase; }
 
 h4 {
-  font-family: "DM Serif Display";
-  font-style: normal;
   text-transform: uppercase;
   font-size: 24px;
-  line-height: 32px;
-  color: #000000; }
+  line-height: 32px; }
 
 h5 {
   font-size: 16px; }
@@ -125,125 +71,11 @@ li {
 a {
   text-decoration: none; }
 
-@font-face {
-  font-family: "DMSans";
-  font-style: normal;
-  font-weight: 700;
-  src: local("DMSans bold"), local("DMSans-bold");
-  src: url(/webroot/fonts/DMSans-Bold.woff2) format(woff2), url(/webroot/fonts/DMSans-Bold.woff) format(woff); }
-
-@font-face {
-  font-family: "DMSans";
-  font-style: normal;
-  font-weight: 700;
-  src: local("DMSans bold italic"), local("DMSans-BoldItalic");
-  src: url(/webroot/fonts/DMSans-BoldItalic.woff2) format(woff2), url(/webroot/fonts/DMSans-BoldItalic.woff) format(woff); }
-
-@font-face {
-  font-family: "DMSans";
-  font-style: normal;
-  src: local("DMSans italic"), local("DMSans-italic");
-  src: url(/webroot/fonts/DMSans-Italic.woff2) format(woff2), url(/webroot/fonts/DMSans-Medium.woff) format(woff); }
-
-@font-face {
-  font-family: "DMSans";
-  font-style: normal;
-  font-weight: 400;
-  src: local("DMSans regular"), local("DMSans-regular");
-  src: url(/webroot/fonts/DMSans-Regular.woff2) format(woff2), url(/webroot/fonts/DMSans-Regular.woff) format(woff); }
-
-@font-face {
-  font-family: "DMSans";
-  font-style: normal;
-  font-size: medium;
-  src: local("DMSans medium"), local("DMSans-medium");
-  src: url(/webroot/fonts/DMSans-Medium.woff2) format(woff2), url(/webroot/fonts/DMSans-Medium.woff) format(woff); }
-
-@font-face {
-  font-family: "DMSans";
-  font-style: normal;
-  font-weight: 400;
-  src: local("DMSans mediumItalic"), local("DMSans-MediumItalic");
-  src: url(/webroot/fonts/DMSans-MediumItalic.woff2) format(woff2), url(/webroot/fonts/DMSans-MediumItalic.woff) format(woff); }
-
-@font-face {
-  font-family: "DMSerifDisplay";
-  font-style: normal;
-  font-size: medium;
-  src: local("DMSerifDisplay regular"), local("DMSerifDisplay-regular");
-  src: url(/webroot/fonts/DMSerifDisplay-Regular.woff2) format(woff2), url(/webroot/fonts/DMSerifDisplay-Regular.woff) format(woff); }
-
-@font-face {
-  font-family: "DMSerifDisplay";
-  font-style: normal;
-  font-weight: 400;
-  src: local("DMSerifDisplay italic"), local("DMSerifDisplay-Italic");
-  src: url(/webroot/fonts/DMSerifDisplay-Italic.woff2) format(woff2), url(/webroot/fonts/DMSerifDisplay-Italic.woff) format(woff); }
-
-h1 {
-  font-family: "DM Serif Display";
-  font-style: normal;
-  font-size: 24px;
-  line-height: 32px;
-  text-transform: uppercase;
-  color: #FFFFFF; }
-
-.contents a,
-.latest,
-.inner-text > p {
-  font-family: "DM Sans";
-  font-style: normal;
-  font-size: 16px;
-  line-height: 24px; }
-
-h2 {
-  font-family: "DM Serif Display";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 52px;
-  line-height: 64px;
-  color: #000000; }
-
-h3 {
-  font-family: "DM Serif Display";
-  font-style: normal;
-  font-size: 40px;
-  line-height: 48px;
-  color: #000000; }
-
-.form label {
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 16px;
-  padding-inline-start: 5px;
-  text-transform: uppercase;
-  color: #000000; }
-
-h4 {
-  font-family: "DM Serif Display";
-  font-style: normal;
-  text-transform: uppercase;
-  font-size: 24px;
-  line-height: 32px;
-  color: #000000; }
-
-h5 {
-  font-size: 16px; }
-
-@media (min-width: 1000px) {
-  h2 {
-    font-size: 72px;
-    line-height: 80px; }
-  h3 {
-    font-size: 52px;
-    line-height: 64px; } }
-
 .masthead {
-  background: #434CCC;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  background: #434CCC;
   padding: 1rem; }
 
 /* drawer menu */
@@ -337,11 +169,10 @@ h5 {
 
 @media (min-width: 800px) {
   .masthead {
-    background: #434CCC;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     padding-inline-start: 135px;
     padding-inline-end: 135px; }
   .menu-btn,
@@ -351,6 +182,7 @@ h5 {
     display: contents; }
   .drawer-menu ul {
     display: flex;
+    flex-direction: row;
     align-items: center; }
   .drawer-menu ul > li {
     margin: 1rem; } }
@@ -439,6 +271,7 @@ figure > ul > li:nth-child(9) {
 .media-link {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: flex-start;
   padding: 2rem;
   padding-inline-start: 0; }
@@ -451,8 +284,8 @@ figure > ul > li:nth-child(9) {
     margin-block-start: 49px;
     padding-inline-start: 135px; }
   .inner {
-    margin-inline-start: 135px;
-    margin-inline-end: 135px; }
+    margin-inline-start: var(--margin);
+    margin-inline-end: var(--margin); }
   .first-inner h2,
   .first-inner p {
     max-width: 50%; }
@@ -572,8 +405,6 @@ button.subscribe {
     gap: 2rem; }
   .subscribe_content {
     padding: 135px; }
-  .form {
-    display: grid; }
   label {
     grid-column: 1 / 8; }
   input {
@@ -623,8 +454,7 @@ footer {
 .second-post {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: 1rem;
-  gap: 1rem; }
+  margin: 1rem; }
 
 .post-list p,
 .grey-link {
@@ -646,22 +476,26 @@ time {
 @media (min-width: 1000px) {
   footer {
     padding-block-start: 0; }
+  .editor-list,
   .footer_inner {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-inline-start: 135px;
-    margin-inline-end: 135px; }
+    margin-inline-start: var(--margin);
+    margin-inline-end: var(--margin);
+    justify-content: space-between; }
   .post-list {
     padding-inline-start: 130px; }
   .first-post p,
   .second-post p {
     margin: 0;
-    padding-inline-start: 1rem; }
-  .editor-list {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding-inline-start: 135px;
-    padding-inline-end: 135px; } }
+    padding-inline-start: 1rem; } }
+
+:root {
+  --margin: 135px;
+  --padding: var(--margin);
+  --primary-color: #000000; }
+
+figure {
+  max-width: 700px;
+  position: relative; }
