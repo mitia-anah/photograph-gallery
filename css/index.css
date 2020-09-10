@@ -140,12 +140,12 @@ a {
   position: fixed;
   top: 0;
   right: 300px;
-  transition-duration: .3s;
+  transition-duration: 3s;
   transition-property: all; }
 
 /* checked */
 .check:checked ~ .drawer-menu {
-  transition-delay: .3s;
+  transition-delay: 3s;
   transform: none;
   opacity: 1;
   z-index: 2; }
@@ -172,9 +172,9 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    padding-inline-start: 135px;
-    padding-inline-end: 135px; }
+    margin-inline-start: var(--margin);
+    margin-inline-end: var(--margin);
+    justify-content: space-between; }
   .menu-btn,
   .close-menu {
     display: none; }
@@ -191,9 +191,8 @@ a {
   background: rgba(67, 76, 204, 0.05);
   padding-block-start: 2rem;
   padding: 14px; }
-
-.contents a {
-  color: rgba(0, 0, 0, 0.5); }
+  .contents a {
+    color: rgba(0, 0, 0, 0.5); }
 
 .contents > a::before {
   content: "←";
@@ -201,10 +200,9 @@ a {
 
 .inner {
   padding-block-start: 2rem; }
-
-.first-inner p {
-  font-size: 1.2rem;
-  line-height: 2rem; }
+  .inner .first-inner p {
+    font-size: 1.2rem;
+    line-height: 2rem; }
 
 img {
   max-width: 100%;
@@ -213,10 +211,6 @@ img {
 figure ul {
   display: grid;
   grid-template-columns: repeat(6, 1fr); }
-
-figure {
-  margin: 0;
-  padding: 0; }
 
 figure > ul {
   padding: 0; }
@@ -353,6 +347,11 @@ figure > ul > li:nth-child(9) {
   .media-link li a:hover {
     background-color: blue; } }
 
+:root {
+  --margin: 135px;
+  --padding: var(--margin);
+  --primary-color: #000000; }
+
 .subscribe_content {
   background: #FFDD78;
   padding-block-start: 63px; }
@@ -360,12 +359,13 @@ figure > ul > li:nth-child(9) {
 .subscribe_content .latest {
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: #000000;
+  color: var(--primary-color);
   padding: 14px; }
 
 .subscribe_inner h3 {
   padding: 14px; }
 
+/* Form */
 .form {
   display: grid; }
 
@@ -405,6 +405,7 @@ button.subscribe {
     gap: 2rem; }
   .subscribe_content {
     padding: 135px; }
+  /* form */
   label {
     grid-column: 1 / 8; }
   input {
@@ -417,6 +418,11 @@ button.subscribe {
     margin-block-start: 0; }
   button.subscribe {
     margin: 0; } }
+
+:root {
+  --margin: 135px;
+  --padding: var(--margin);
+  --primary-color: #000000; }
 
 footer {
   padding-block-start: 75px;
