@@ -52,16 +52,11 @@ button.subscribe {
 
 @media (min-width: 1000px) {
     .subscribe_inner {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        @include grid();
         gap: 2rem;
     }
     .subscribe_content {
         padding: 135px;
-    }
-    .form {
-        display: grid;
-        // grid-template-columns: 8;
     }
     label {
         grid-column: 1 / 8;
