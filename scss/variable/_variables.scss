@@ -1,0 +1,15 @@
+@mixin flex-element {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@mixin wrapping-margin {
+    margin-inline-start: var(--margin);
+    margin-inline-end: var(--margin);
+}
+
+@mixin grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
