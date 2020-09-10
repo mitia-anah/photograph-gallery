@@ -1,10 +1,7 @@
-@import "../scss/fonts";
+@import "scss/variable/variables";
 .masthead {
+    @include flex-element();
     background: #434CCC;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     padding: 1rem;
 }
 
@@ -121,11 +118,8 @@
 
 @media (min-width: 800px) {
     .masthead {
-        background: #434CCC;
-        display: flex;
-        flex-direction: row;
+        @include flex-element();
         justify-content: space-between;
-        align-items: center;
         padding-inline-start: 135px;
         padding-inline-end: 135px;
     }
@@ -137,8 +131,7 @@
         display: contents;
     }
     .drawer-menu ul {
-        display: flex;
-        align-items: center;
+        @include flex-element();
     }
     .drawer-menu ul>li {
         margin: 1rem;
