@@ -1,69 +1,20 @@
-@font-face {
-    font-family: "DMSans";
-    font-style: normal;
-    font-weight: 700;
-    src: local('DMSans bold'), local('DMSans-bold');
-    src: url(/webroot/fonts/DMSans-Bold.woff2) format(woff2), url(/webroot/fonts/DMSans-Bold.woff) format(woff);
+@import "scss/variable/custom-property";
+$fonts: ( ( family: "DMSans", weight: 700, style: normal, filename: "'DMSans-bold"), ( family: "DMSans", weight: 700, style: italic, filename: "'DMSans-BoldItalic"), ( family: "DMSans", style: normal, filename: "'DMSans-italic"), ( family: "DMSans", weight: 400, style: normal, filename: "'DMSans-regular"), ( family: "DMSans", style: normal, filename: "'DMSans-medium"), ( family: "DMSans", style: italic, filename: "DMSans-MediumItalic"), ( family: "DMSerifDisplay", weight: 400, style: normal, filename: "DMSerifDisplay-regular"), ( family: "DMSerifDisplay", weight: 400, style: Italic, filename: "DMSerifDisplay-Italic"), );
+h1,
+h2,
+h3,
+h4 {
+    font-family: "DM Serif Display";
 }
 
-@font-face {
-    font-family: "DMSans";
-    font-style: normal;
-    font-weight: 700;
-    src: local('DMSans bold italic'), local('DMSans-BoldItalic');
-    src: url(/webroot/fonts/DMSans-BoldItalic.woff2) format(woff2), url(/webroot/fonts/DMSans-BoldItalic.woff) format(woff);
-}
-
-@font-face {
-    font-family: "DMSans";
-    font-style: normal;
-    src: local('DMSans italic'), local('DMSans-italic');
-    src: url(/webroot/fonts/DMSans-Italic.woff2) format(woff2), url(/webroot/fonts/DMSans-Medium.woff) format(woff);
-}
-
-@font-face {
-    font-family: "DMSans";
-    font-style: normal;
-    font-weight: 400;
-    src: local('DMSans regular'), local('DMSans-regular');
-    src: url(/webroot/fonts/DMSans-Regular.woff2) format(woff2), url(/webroot/fonts/DMSans-Regular.woff) format(woff);
-}
-
-@font-face {
-    font-family: "DMSans";
-    font-style: normal;
-    font-size: medium;
-    src: local('DMSans medium'), local('DMSans-medium');
-    src: url(/webroot/fonts/DMSans-Medium.woff2) format(woff2), url(/webroot/fonts/DMSans-Medium.woff) format(woff);
-}
-
-@font-face {
-    font-family: "DMSans";
-    font-style: normal;
-    font-weight: 400;
-    src: local('DMSans mediumItalic'), local('DMSans-MediumItalic');
-    src: url(/webroot/fonts/DMSans-MediumItalic.woff2) format(woff2), url(/webroot/fonts/DMSans-MediumItalic.woff) format(woff);
-}
-
-@font-face {
-    font-family: "DMSerifDisplay";
-    font-style: normal;
-    font-size: medium;
-    src: local('DMSerifDisplay regular'), local('DMSerifDisplay-regular');
-    src: url(/webroot/fonts/DMSerifDisplay-Regular.woff2) format(woff2), url(/webroot/fonts/DMSerifDisplay-Regular.woff) format(woff);
-}
-
-@font-face {
-    font-family: "DMSerifDisplay";
-    font-style: normal;
-    font-weight: 400;
-    src: local('DMSerifDisplay italic'), local('DMSerifDisplay-Italic');
-    src: url(/webroot/fonts/DMSerifDisplay-Italic.woff2) format(woff2), url(/webroot/fonts/DMSerifDisplay-Italic.woff) format(woff);
+h2,
+h3,
+.form label,
+h4 {
+    color: var(--primary-color);
 }
 
 h1 {
-    font-family: "DM Serif Display";
-    font-style: normal;
     font-size: 24px;
     line-height: 32px;
     text-transform: uppercase;
@@ -73,27 +24,17 @@ h1 {
 .contents a,
 .latest,
 .inner-text>p {
-    font-family: "DM Sans";
-    font-style: normal;
-    font-size: 16px;
     line-height: 24px;
 }
 
 h2 {
-    font-family: "DM Serif Display";
-    font-style: normal;
-    font-weight: normal;
     font-size: 52px;
     line-height: 64px;
-    color: #000000;
 }
 
 h3 {
-    font-family: "DM Serif Display";
-    font-style: normal;
     font-size: 40px;
     line-height: 48px;
-    color: #000000;
 }
 
 .form label {
@@ -102,16 +43,12 @@ h3 {
     line-height: 16px;
     padding-inline-start: 5px;
     text-transform: uppercase;
-    color: #000000;
 }
 
 h4 {
-    font-family: "DM Serif Display";
-    font-style: normal;
     text-transform: uppercase;
     font-size: 24px;
     line-height: 32px;
-    color: #000000;
 }
 
 h5 {
