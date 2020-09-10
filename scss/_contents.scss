@@ -29,6 +29,10 @@ img {
     border-radius: 5px;
 }
 
+figure {
+    margin: 0;
+}
+
 figure ul {
     display: grid;
     grid-template-columns: repeat(6, 1fr);

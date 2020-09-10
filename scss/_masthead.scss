@@ -119,7 +119,8 @@
 @media (min-width: 800px) {
     .masthead {
         @include flex-element();
-        @include wrapping-margin();
+        padding-inline-start: var(--padding);
+        padding-inline-end: var(--padding);
         justify-content: space-between;
     }
     .menu-btn,
