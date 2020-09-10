@@ -1,13 +1,12 @@
 @import "scss/variable/variables";
-// This is the parents of the contents
+// All the contents codes go here
 .contents {
     background: rgba(67, 76, 204, 0.05);
     padding-block-start: 2rem;
     padding: 14px;
-}
-
-.contents a {
-    color: rgba(0, 0, 0, 0.5);
+    a {
+        color: rgba(0, 0, 0, 0.5);
+    }
 }
 
 .contents>a::before {
@@ -18,12 +17,11 @@
 // this inner is child of the contents and it has three children, which are first inner, contents details and the last inner.
 .inner {
     padding-block-start: 2rem;
-}
-
-// the first inner contains a header, a paragraph and then figure, which has four lists of images
-.first-inner p {
-    font-size: 1.2rem;
-    line-height: 2rem;
+    .first-inner p {
+        // the first inner contains a header, a paragraph and then figure, which has four lists of images 
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
 }
 
 img {
@@ -34,11 +32,6 @@ img {
 figure ul {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-}
-
-figure {
-    margin: 0;
-    padding: 0;
 }
 
 figure>ul {

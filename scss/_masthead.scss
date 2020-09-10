@@ -81,7 +81,7 @@
     position: fixed;
     top: 0;
     right: 300px;
-    transition-duration: .3s;
+    transition-duration: 3s;
     transition-property: all;
 }
 
@@ -89,7 +89,7 @@
 /* checked */
 
 .check:checked~.drawer-menu {
-    transition-delay: .3s;
+    transition-delay: 3s;
     transform: none;
     opacity: 1;
     z-index: 2;
@@ -119,9 +119,8 @@
 @media (min-width: 800px) {
     .masthead {
         @include flex-element();
+        @include wrapping-margin();
         justify-content: space-between;
-        padding-inline-start: 135px;
-        padding-inline-end: 135px;
     }
     .menu-btn,
     .close-menu {
