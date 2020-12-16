@@ -1,24 +1,19 @@
 {
   "name": "front-end-finals",
   "version": "1.0.0",
-  "description": "Boilerplate for the final mockup-to-website project of the front-end development course",
+  "description": "Hey everyone!",
+  "main": "index.js",
   "scripts": {
-    "scss": "node-sass scss -o webroot/css",
-    "scss:watch": "npm run scss && node-sass scss -w -o webroot/css",
-    "start": "npm run scss:watch"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/onja-org/front-end-finals.git"
+    "url": "git+https://github.com/mitia-anah/front-end-finals.git"
   },
-  "keywords": [],
-  "author": "Shaun O'Connell <shaun@onja.org>",
-  "license": "MIT",
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/onja-org/front-end-finals/issues"
+    "url": "https://github.com/mitia-anah/front-end-finals/issues"
   },
-  "homepage": "https://github.com/onja-org/front-end-finals#readme",
-  "devDependencies": {
-    "node-sass": "^4.14.1"
-  }
+  "homepage": "https://github.com/mitia-anah/front-end-finals#readme"
 }
