@@ -480,3 +480,32 @@ time {
   --margin: 135px;
   --padding: var(--margin);
   --primary-color: #000000; }
+
+#thumbnails {
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+  gap: 10px; }
+  #thumbnails img {
+    width: 170px; }
+
+#main {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  margin: 20px auto; }
+
+@media (min-width: 800px) {
+  #thumbnails img {
+    box-shadow: 2px 2px 10px 5px #b8b8b8;
+    border-radius: 10px; }
+  #thumbnails {
+    flex-wrap: wrap;
+    gap: 10px; }
+    #thumbnails img {
+      width: 120px;
+      cursor: pointer; }
+      #thumbnails img:hover {
+        transform: scale(1.05); }
+  .hidden {
+    opacity: 0; } }

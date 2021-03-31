@@ -118,72 +118,16 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"slider.js":[function(require,module,exports) {
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+var thumbnails = document.getElementById("thumbnails");
+var imgs = thumbnails.getElementsByTagName("img");
+var main = document.getElementById("main");
+var counter = 0;
 
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-
-function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it.return != null) it.return(); } finally { if (didErr) throw err; } } }; }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-var imageCont = document.getElementById('sliderImage-section');
-var sliderImages = document.getElementsByClassName('sliderImage');
-var fullSizeImgs = document.getElementsByClassName('mySlides');
-var currentImage = 0; // Removes 'show' classes from large images
-// Removes 'active' class from sliderImages
-
-function reset() {
-  var _iterator = _createForOfIteratorHelper(fullSizeImgs),
-      _step;
-
-  try {
-    for (_iterator.s(); !(_step = _iterator.n()).done;) {
-      var img = _step.value;
-      img.classList.remove('show');
-    }
-  } catch (err) {
-    _iterator.e(err);
-  } finally {
-    _iterator.f();
-  }
-
-  var _iterator2 = _createForOfIteratorHelper(sliderImages),
-      _step2;
-
-  try {
-    for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
-      var image = _step2.value;
-      image.firstElementChild.classList.remove('active');
-    }
-  } catch (err) {
-    _iterator2.e(err);
-  } finally {
-    _iterator2.f();
-  }
-} // Show larger image based on thumbnail index clicked
-
-
-imageCont.addEventListener('click', function (e) {
-  reset(); // Find index of images clicked
-
-  var index = _toConsumableArray(sliderImages).indexOf(e.target.parentNode); // Use that index to show its larger IMG
-
-
-  fullSizeImgs[index].classList.add('show'); // Set global variable for currentImage
-  // currentImage = index;
-
-  displayImages();
-});
-
-function displayImages() {
-  var images = sliderImages[currentImage].firstElementChild;
-  images.classList.add('active');
+for (var i = 0; i < imgs.length; i++) {
+  var img = imgs[i];
+  img.addEventListener("click", function () {
+    main.src = this.src;
+  });
 }
 },{}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -213,7 +157,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54198" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56233" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -40,62 +40,17 @@
           <h2>Beauty is seen through a lens</h2>
           <p>Perspective matters. All my photographs try to capture that perspective, however subtle.</p>
           <figure>
-            <div class="sliderList">
-              <div class="mySlides show">
-                <div class="item"><img src="./images/rock_carvings_lg.jpg" alt="large image of rock carving"></div>
-              </div>
-              <div class="mySlides ">
-                <div class="item"><img src="./images/rock_carvings_sm.jpg" alt="small version of rock carving"></div>
-              </div>
-              <div class="mySlides ">
-                <div class="item"><img src="./images/stairs_sm.jpg" alt="small version of stires image"></div>
-              </div>
-              <div class="mySlides ">
-                <div class="item"><img src="./images/ripples_sm.jpg" alt="small version of ripples image"></div>
-              </div>
-              <div class="mySlides ">
-                <div class="item"><img src="./images/dunes_sm.jpg" alt="small version of dunes"></div>
-              </div>
-              <div class="mySlides ">
-                <div class="item"><img src="./images/arches_sm.jpg" alt="small version of arch"></div>
-              </div>
-              <div class="mySlides ">
-                <div class="item"><img src="./images/car_sm.jpg" alt="small version of car image"></div>
-              </div>
-              <div class="mySlides ">
-                <div class="item"><img src="./images/sunset_sm.jpg" alt="small version of sunset"></div>
-              </div>
-              <div class="mySlides ">
-                <div class="item"><img src="./images/canyon_sm.jpg" alt="small version of canyon"></div>
-              </div>
-            </div>
-
-            <div id="sliderImage-section" class="row">
-              <div class="sliderImage">
-                <img class="demo cursor" src="./images/rock_carvings_sm.jpg" alt="small version of rock carving">
-              </div>
-              <div class="sliderImage">
-                <img class="demo cursor" src="./images/stairs_sm.jpg" alt="small version of stires image">
-              </div>
-              <div class="sliderImage">
-                <img class="demo cursor" src="./images/ripples_sm.jpg" alt="small version of ripples image">
-              </div>
-              <div class="sliderImage">
-                <img class="demo cursor" src="./images/dunes_sm.jpg" alt="small version of dunes">
-              </div>
-              <div class="sliderImage">
-                <img class="demo cursor" src="./images/arches_sm.jpg" alt="small version of arch">
-              </div>
-              <div class="sliderImage">
-                <img class="demo cursor" src="./images/car_sm.jpg" alt="small version of car image">
-              </div>
-              <div class="sliderImage">
-                <img class="demo cursor" src="./images/sunset_sm.jpg" alt="small version of sunset">
-              </div>
-              <div class="sliderImage ">
-                <img class="demo cursor " src="./images/canyon_sm.jpg " alt="small version of canyon ">
-              </div>
-            </div>
+            <img src="./images/rock_carvings_lg.jpg" alt="" id="main">
+            <div id="thumbnails">
+              <img src="./images/rock_carvings_sm.jpg" alt="">
+              <img src="./images/stairs_sm.jpg">
+              <img src="./images/ripples_sm.jpg">
+              <img src="./images/dunes_sm.jpg">
+              <img src="./images/arches_sm.jpg">
+              <img src="./images/car_sm.jpg">
+              <img src="./images/sunset_sm.jpg">
+              <img src="./images/canyon_sm.jpg">
+            </div>           
           </figure>
         </div>
         <div class="contents-details ">
@@ -128,51 +83,97 @@
           <nav>
             <ul class="media-link ">
               <li>
-                <a href="https://facebook.com ">
+                <a href="https://facebook.com "> 
                   <img src="./images/facebook-icon.svg" alt="">
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com">
+                <a href="https://twitter.com ">
                   <img src="./images/twitter-icon.svg" alt="">
+                  </a>
+              </li>
+              <li>
+                <a href="https://instagram.com ">
+                  <img src="./images/instagram-icon.svg" alt="">
                 </a>
               </li>
             </ul>
-
           </nav>
         </div>
-
-        <div class="inner-link ">
-          <ul class="home ">
-            <li><a href="# ">Home</a></li>
-            <li><a href="# " class="grey-link ">About</a></li>
-            <li><a href="# " class="grey-link ">Portfolio</a></li>
-            <li><a href="# " class="grey-link ">Blog</a></li>
-            <li><a href="# " class="grey-link ">contact</a></li>
-          </ul>
-        </div>
-
-        <div class="inner-post ">
-          <ul class="post-list ">
-            <li class="first-post ">
-              <img src="./images/woman_xs.jpg " alt="woman ">
-              <p>Rust, pumpkin, tans, and spices. <br><time datetime="2019-07-15 ">July 15, 2019</time> </p>
-            </li>
-            <li class="second-post ">
-              <img src="./images/passage_xs.jpg " alt="passage ">
-              <p>Experiencing Japan <br><time datetime="2019-07-10 ">July 10, 2019</time></p>
-            </li>
-          </ul>
-        </div>
       </div>
-      <nav class="editor ">
-        <ul class="editor-list ">
-          <li><a href="https://onja.org/ ">Created by Laaqiq, modified by Onja.</a></li>
-          <li><a href="# ">© PHOTOGRAF, 2020. All rights reserved.</a></li>
+    </div>
+
+    <div class="subscribe_content ">
+      <a href="# " class="latest ">Latest</a>
+      <div class="subscribe_inner ">
+        <h3>Stay up-to-date with my updates</h3>
+        <form class="form ">
+          <label for="email ">Your email address</label>
+          <input type="submit " name="address " id="email " placeholder="e.g. jesse@gmail.com ">
+          <button type="submit " class="subscribe ">subscribe</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer_inner ">
+      <div class="inner-text ">
+        <h4>Photograf</h4>
+        <p>The personal website of Jesse McJessesen, professional photographer.</p>
+        <nav>
+          <ul class="media-link ">
+            <li>
+              <a href="https://facebook.com ">
+                <img src="./images/facebook-icon.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com ">
+                <img src="./images/twitter-icon.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com ">
+                <img src="./images/instagram-icon.svg" alt="">
+              </a>
+            </li>
+          </ul>
+
+        </nav>
+      </div>
+
+      <div class="inner-link ">
+        <ul class="home ">
+          <li><a href="# ">Home</a></li>
+          <li><a href="# " class="grey-link ">About</a></li>
+          <li><a href="# " class="grey-link ">Portfolio</a></li>
+          <li><a href="# " class="grey-link ">Blog</a></li>
+          <li><a href="# " class="grey-link ">contact</a></li>
         </ul>
-      </nav>
-      </footer>
-      <script src="./slider.js "></script>
+      </div>
+
+      <div class="inner-post ">
+        <ul class="post-list ">
+          <li class="first-post ">
+            <img src="./images/woman_xs.jpg " alt="woman ">
+            <p>Rust, pumpkin, tans, and spices. <br><time datetime="2019-07-15 ">July 15, 2019</time> </p>
+          </li>
+          <li class="second-post ">
+            <img src="./images/passage_xs.jpg " alt="passage ">
+            <p>Experiencing Japan <br><time datetime="2019-07-10 ">July 10, 2019</time></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <nav class="editor ">
+      <ul class="editor-list ">
+        <li><a href="https://onja.org/ ">Created by Laaqiq, modified by Onja.</a></li>
+        <li><a href="# ">© PHOTOGRAF, 2020. All rights reserved.</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="./slider.js "></script>
 </body>
 
 </html>

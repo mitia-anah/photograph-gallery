@@ -4,7 +4,8 @@
   "description": "Hey everyone!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "scss": "node-sass scss -o webroot/css",
+    "scss:watch": "npm run scss && node-sass scss -w -o webroot/css"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/mitia-anah/front-end-finals/issues"
   },
-  "homepage": "https://github.com/mitia-anah/front-end-finals#readme"
+  "homepage": "https://github.com/mitia-anah/front-end-finals#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
 }
