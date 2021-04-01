@@ -6,12 +6,22 @@ html {
 
 body {
     margin: 0;
+    background: rgba(67, 76, 204, 0.05);
 }
-
+// main {
+//     max-width: 80%;
+//     margin: auto;
+// }
 li {
     list-style: none;
 }
 
 a {
     text-decoration: none;
+}
+
+@media  (min-width: 800px) {
+    main {
+       
+    }
 }

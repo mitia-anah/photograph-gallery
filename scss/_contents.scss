@@ -1,8 +1,9 @@
 @import "scss/variable/variables";
 // All the contents codes go here
 .contents {
-    background: rgba(67, 76, 204, 0.05);
     padding-block-start: 2rem;
+    margin: auto;
+    max-width: 81.25%;
     padding: 14px;
     a {
         color: rgba(0, 0, 0, 0.5);
@@ -131,10 +132,10 @@ figure {
 @media (min-width: 800px) {
     .contents a {
         margin-block-start: 49px;
-        padding-inline-start: 135px;
+        // padding-inline-start: 135px;
     }
     .inner {
-        @include wrapping-margin();
+        // @include wrapping-margin();
     }
     .first-inner h2,
     .first-inner p {
