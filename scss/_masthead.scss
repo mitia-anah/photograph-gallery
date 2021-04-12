@@ -1,7 +1,6 @@
 @import "scss/variable/variables";
 .masthead {
     @include flex-element();
-    background: #434CCC;
     padding: 1rem;
 }
 
@@ -118,9 +117,12 @@
 @media (min-width: 800px) {
     .masthead {
         @include flex-element();
-        padding-inline-start: var(--padding);
-        padding-inline-end: var(--padding);
-        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        max-width: 81.25%;
+        margin: auto;
+        gap: 30%;
+        align-items: center;
     }
     .menu-btn,
     .close-menu {
