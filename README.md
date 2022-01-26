@@ -1,5 +1,7 @@
 # Photograph Gallery
 
+![This is the screenShot of the photo-galley ](./webroot/images/rosny-photogallery.png)
+
 ## Dependencies
 - Node.js
 - Figma
@@ -20,5 +22,7 @@ You can find the design:
 ## Development
 
 You'll want to run the `scss:watch` task when you're developing this project.
+
+
 
 
