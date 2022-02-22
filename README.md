@@ -1,4 +1,4 @@
-# Photograph Gallery
+# Photography Gallery
 
 ![This is the screenShot of the photo-galley ](./webroot/images/rosny-photogallery.png)
 
